@@ -20,9 +20,10 @@ You can use the escape sequence **\t** to put a tab character between columns of
 5. Write a loop in main that invokes check with the values 0.1, 1.0, 10.0, and 100.0.
 * How does the accuracy of the result vary as x varies?
     * Compare the number of digits of agreement rather than the difference between the actual and estimated values.
-
+        * For 0.1 and 1 it is fine. For 10 and 100 it is completely inaccurate.
 6. Add a loop in main that checks myexp with the values -0.1, -1.0, -10.0, and -100.0.
 * Comment on the accuracy.
+  * like with the first set it works fine for the first two and then goes crazy and becomes completely inaccurate.
 
 ## Part 2 - Submit via GitHub Pull Request
 * Perform the same Pull request steps you've been doing all semester!
