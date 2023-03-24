@@ -20,10 +20,10 @@ You can use the escape sequence **\t** to put a tab character between columns of
 5. Write a loop in main that invokes check with the values 0.1, 1.0, 10.0, and 100.0.
 * How does the accuracy of the result vary as x varies?
     * Compare the number of digits of agreement rather than the difference between the actual and estimated values.
-
+-For the smaller digits it's pretty accurate but the larger the number the larger the discrepancy is.
 6. Add a loop in main that checks myexp with the values -0.1, -1.0, -10.0, and -100.0.
 * Comment on the accuracy.
-
+--For the smaller digits it's pretty accurate but the larger the number the larger the discrepancy is. I was shocked to see how far off -100.0 was; it brought it to be a positive number or was that my bad...?
 ## Part 2 - Submit via GitHub Pull Request
 * Perform the same Pull request steps you've been doing all semester!
     * Don't forget to **feature branch** as Sprint2023
