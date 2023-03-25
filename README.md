@@ -24,6 +24,11 @@ You can use the escape sequence **\t** to put a tab character between columns of
 6. Add a loop in main that checks myexp with the values -0.1, -1.0, -10.0, and -100.0.
 * Comment on the accuracy.
 
+//When you increase the number of n, the accuracy will go up.
+This is because the closer you get to infinity,
+the more "accurate" the estimation is to e,
+which is an infinite series.
+
 ## Part 2 - Submit via GitHub Pull Request
 * Perform the same Pull request steps you've been doing all semester!
     * Don't forget to **feature branch** as Sprint2023
