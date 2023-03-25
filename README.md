@@ -24,6 +24,9 @@ You can use the escape sequence **\t** to put a tab character between columns of
 6. Add a loop in main that checks myexp with the values -0.1, -1.0, -10.0, and -100.0.
 * Comment on the accuracy.
 
+Accuracy gets worse as the value of x moves further away from 0.
+Setting i = 0 gave strange results so i was set to 1
+
 ## Part 2 - Submit via GitHub Pull Request
 * Perform the same Pull request steps you've been doing all semester!
     * Don't forget to **feature branch** as Sprint2023
