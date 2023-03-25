@@ -21,9 +21,13 @@ You can use the escape sequence **\t** to put a tab character between columns of
 * How does the accuracy of the result vary as x varies?
     * Compare the number of digits of agreement rather than the difference between the actual and estimated values.
 
+ for the smaller values the agreement is 15 places, for 10.0 it's 12, and for 100.0 it's 10 places. This is not including the 0's.
+
 6. Add a loop in main that checks myexp with the values -0.1, -1.0, -10.0, and -100.0.
 * Comment on the accuracy.
-
+* the accuracy on the negatives is interesting, the lower numbers agree to 15 places, -10.0 agrees to 15, and -100 also agrees to 15.
+* excluding places -10 and -100 are insanely different where the actual of -100 is 0 and myexp is a number I am not typing out! this is all assuming I did this correctly.
+ however I cannot confirm the accuracy of the actual -100.0 because it produces such a small decimal.
 ## Part 2 - Submit via GitHub Pull Request
 * Perform the same Pull request steps you've been doing all semester!
     * Don't forget to **feature branch** as Sprint2023
