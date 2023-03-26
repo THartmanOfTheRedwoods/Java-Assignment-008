@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  *
  * @author Trevor Hartman
@@ -7,9 +5,14 @@ import java.util.Scanner;
  *
  * @since Version 1.0
  *
+ * This code was written just to see if it works using the scanner for x, instead of the loop from 0.1 to 100
+ *
  */
 
-public class InfiniteSeries {
+import java.util.Scanner;
+
+public class MCEiht {
+
     /**
      *
      * @param n passed from i inside myeXp
@@ -17,7 +20,7 @@ public class InfiniteSeries {
      *
      * The factorial method needed for the method myeXp
      */
-     public static int factorial(int n) {
+    public static int factorial(int n) {
 
         int fax = 1;
         for (int i = 1; i <= n; i++) {
@@ -41,7 +44,6 @@ public class InfiniteSeries {
         }
         return e;
     }
-
     /**
      *
      * @param x anders Scanner
@@ -62,24 +64,18 @@ public class InfiniteSeries {
     }
 
     public static void main(String[] args) {
+        Scanner anders = new Scanner(System.in);
 
-        Scanner ask = new Scanner(System.in);
+        System.out.println("Type in a number please");
+        double x = anders.nextInt();
 
-        System.out.print("I need a value for n: ");
-        int n = ask.nextInt();
+        System.out.println("I need another number to proceed...");
+        int n = anders.nextInt();
 
-        double x;
+        double result = myeXp(x, n);
+        double otherResult = myeXpMODDED(x, n);
 
-        x = 0.1;
-        while (x <= 100.0) {
-            System.out.printf("%f\t%f\t%f\n", x, myeXp(x, n), Math.exp(x));
-            x = x * 10;
-        }
-
-        x = -0.1;
-        while (x >= -100.0) {
-            System.out.printf("%f\t%f\t%f\n", x, myeXp(x, n), Math.exp(x));
-            x = x * 10;
-        }
+        System.out.printf("With factorial method and Math.pow\n%f\t%f\t%f\n", result, Math.exp(x));
+        System.out.printf("Without factorial method and Math.pow\n%f\t%f\t%f", x, otherResult, Math.exp(x));
     }
 }
