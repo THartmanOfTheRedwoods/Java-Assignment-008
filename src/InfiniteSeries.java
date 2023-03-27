@@ -1,3 +1,8 @@
+/**
+ * Since Version 1.0
+ * Sequoyah Schaefer
+ */
+
 import java.util.stream.LongStream;
 public class InfiniteSeries{
     public static int e;
