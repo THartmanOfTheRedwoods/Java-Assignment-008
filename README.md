@@ -20,9 +20,11 @@ You can use the escape sequence **\t** to put a tab character between columns of
 5. Write a loop in main that invokes check with the values 0.1, 1.0, 10.0, and 100.0.
 * How does the accuracy of the result vary as x varies?
     * Compare the number of digits of agreement rather than the difference between the actual and estimated values.
+        * Both 0.1 and 1.0 are pretty consistent in accuracy, but 10.0 is wrong by the second digit and 100.0 is wrong by the first digit and is also significantly lower than Math.exp().
 
 6. Add a loop in main that checks myexp with the values -0.1, -1.0, -10.0, and -100.0.
 * Comment on the accuracy.
+  * -0.1 and -1.0 have the same digits, but at -10.0 myexp() returns a negative value when Math.exp() is returning a positive number, and it's the same for -100.0, but even more pronounced. It seems like negative numbers cause extra inaccuracy with this method.
 
 ## Part 2 - Submit via GitHub Pull Request
 * Perform the same Pull request steps you've been doing all semester!
